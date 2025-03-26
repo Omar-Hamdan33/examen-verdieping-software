@@ -16,7 +16,7 @@
             
             <a href="<?= URLROOT; ?>/horloges/index">Duurste Horloges</a> |
             <a href="<?= URLROOT; ?>/zangeressen/index">Rijkste zangeressen</a> |
-            <a href="<?= URLROOT; ?>/vulkaan/index">Vulkaan</a> 
+            <a href="<?= URLROOT; ?>/vulkaan/index">Actiefste Vulkanen</a> 
 
         </div>
         

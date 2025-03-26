@@ -671,11 +671,11 @@ VALUES
 CREATE TABLE Vulkaan
 (
      Id                       INT            UNSIGNED    NOT NULL        AUTO_INCREMENT
-    ,Naam                     VARCHAR(250)               NOT NULL
+    ,Naam                     VARCHAR(25)               NOT NULL
     ,Hoogte                   SMALLINT       UNSIGNED    NOT NULL
-    ,Land                     VARCHAR(100)               NOT NULL
+    ,Land                     VARCHAR(50)               NOT NULL
     ,JaarLaatsteUitbarsting   YEAR			             NOT NULL
-    ,AantalSlachtoffers       MEDIUMINT      UNSIGNED    NOT NULL
+    ,AantalSlachtoffers       TINYINT	     UNSIGNED    NOT NULL
     ,IsActief                 BIT                        NOT NULL        DEFAULT 1
     ,Opmerking                VARCHAR(255)                   NULL        DEFAULT NULL
     ,DatumAangemaakt          DATETIME(6)                NOT NULL 	   DEFAULT CURRENT_TIMESTAMP(6)

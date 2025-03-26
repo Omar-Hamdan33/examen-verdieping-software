@@ -11,7 +11,7 @@ define('DB_PASS', '');
 /**
  * De naam van de virtualhost
  */
-define('URLROOT', 'http://backendtoetss/');
+define('URLROOT', 'http://backendtoetss');
 
 /**
  * Het pad naar de folder app

@@ -6,7 +6,7 @@
 
         <div class="col-1"></div>
         <div class="col-10">        
-            <h3><?= $data['title']; ?></h3>
+            <h3 class="text-warning text-center">Top 5 actiefste vulkanen ter wereld</h3>
         </div>
         <div class="col-1"></div>
     </div>
@@ -18,10 +18,10 @@
                 <thead>
                     <tr>
                         <th>Naam</th>
-                        <th>Hoogte</th>
+                        <th>Hoogte (m)</th>
                         <th>Land</th>
-                        <th>JaarLaatsteUitbarsting</th>
-                        <th>AantalSlachtoffers</th>
+                        <th>Jaar Laatste Uitbarsting</th>
+                        <th>Aantal Slachtoffers</th>
                     </tr>
                 </thead>
                 <tbody>
