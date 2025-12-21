@@ -1,0 +1,113 @@
+.userbeheer-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem 2.5rem;
+}
+#userbeheerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+#userbeheerForm label {
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+#userbeheerForm input[type="text"],
+#userbeheerForm input[type="email"],
+#userbeheerForm input[type="date"],
+#userbeheerForm input[type="password"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+#userbeheerForm input[type="submit"] {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#userbeheerForm input[type="submit"]:hover {
+  background: #0056b3;
+}
+/* Responsive login form styling */
+.login-container {
+  max-width: 400px;
+  margin: 2.5rem auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem 2.5rem;
+}
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#loginForm label {
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+#loginForm input[type="email"],
+#loginForm input[type="password"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+#loginForm .btn.btn-primary {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#loginForm .btn.btn-primary:hover {
+  background: #0056b3;
+}
+#loginForm .btn-link {
+  margin-top: 0.5rem;
+  color: #007bff;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .userbeheer-container {
+    padding: 1rem 0.5rem;
+    max-width: 98vw;
+  }
+  #userbeheerForm {
+    gap: 0.5rem;
+  }
+  #userbeheerForm input,
+  #userbeheerForm label {
+    font-size: 1rem;
+  }
+  .login-container {
+    padding: 1rem 0.5rem;
+    max-width: 98vw;
+  }
+  #loginForm {
+    gap: 0.5rem;
+  }
+  #loginForm input,
+  #loginForm label {
+    font-size: 1rem;
+  }
+}

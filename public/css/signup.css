@@ -1,0 +1,347 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding-top: 0; /* Verwijder extra ruimte boven navbar */
+    min-height: 100vh;
+    /* Verwijder flexbox uit body zodat containers niet naast navbar komen */
+}
+
+.signup-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin: 6rem auto 0 auto;
+  padding: 2rem;
+  position: relative;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Voeg een achtergrondkleur toe om de navigatiebalk zichtbaar te maken */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optionele schaduw voor een beter visueel effect */
+    z-index: 1000; /* Zorg ervoor dat de navigatiebalk boven andere elementen wordt weergegeven */
+    padding: 1rem 0; /* Optionele padding voor een betere uitstraling */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.signup-button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    background: #007bff;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.signup-button:hover {
+    background: #0056b3;
+}
+
+p {
+    margin-top: 1rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Signup/Thank you specifieke styling */
+.signup-thankyou-container {
+  max-width: 450px;
+  margin: 3rem auto 2rem auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  text-align: center;
+  position: relative;
+  left: 0;
+  right: 0;
+  /* Forceer centrering met margin auto en static position */
+}
+
+.signup-thankyou-container h1 {
+  color: #137333;
+  margin-bottom: 1.2rem;
+  font-size: 2rem;
+}
+
+.signup-thankyou-container p {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+/* Responsive styling voor de bedankpagina */
+@media (max-width: 600px) {
+  .signup-thankyou-container {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+    max-width: 98vw;
+  }
+  .signup-thankyou-container h1 {
+    font-size: 1.3rem;
+  }
+  .signup-thankyou-container p {
+    font-size: 1rem;
+  }
+}
+
+.signup-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  margin-top: 6rem;
+}
+
+@media (max-width: 600px) {
+  .signup-center {
+    margin-top: 7rem;
+    min-height: 60vh;
+  }
+}
+
+.signup-container h1 {
+  color: #137333;
+  margin-bottom: 1.2rem;
+  font-size: 2rem;
+}
+.signup-container .form-group {
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+.signup-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.signup-container input[type="text"],
+.signup-container input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.signup-container .signup-button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.signup-container .signup-button:hover {
+  background: #0056b3;
+}
+.signup-container .alert {
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+/* Responsive styling voor wachtwoord aanmaken */
+.signup-container.signup-center {
+  max-width: 420px;
+  margin: 3rem auto 2rem auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  text-align: center;
+}
+.signup-container.signup-center h1 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+.signup-container.signup-center form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+.signup-container.signup-center label {
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  text-align: left;
+}
+.signup-container.signup-center input[type="password"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.signup-container.signup-center .signup-button {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.signup-container.signup-center .signup-button:hover {
+  background: #0056b3;
+}
+/* Responsive styling voor wachtwoord reset formulier */
+.signup-container {
+  max-width: 420px;
+  margin: 3rem auto 2rem auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  text-align: center;
+}
+.signup-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+.signup-container label {
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  text-align: left;
+}
+.signup-container input[type="email"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.signup-container .signup-button {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.signup-container .signup-button:hover {
+  background: #0056b3;
+}
+/* Responsive styling voor registratieformulier */
+.signup-container {
+  max-width: 420px;
+  margin: 3rem auto 2rem auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  text-align: center;
+}
+.signup-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+.signup-container label {
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  text-align: left;
+}
+.signup-container input[type="text"],
+.signup-container input[type="email"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.signup-container .signup-button {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.signup-container .signup-button:hover {
+  background: #0056b3;
+}
+.signup-container p {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+.signup-container a {
+  color: #007bff;
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .signup-container {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+    max-width: 98vw;
+  }
+  .signup-container h1 {
+    font-size: 1.3rem;
+  }
+  .signup-container form {
+    gap: 0.5rem;
+  }
+}

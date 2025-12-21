@@ -8,7 +8,9 @@ class Homepages extends BaseController
         /**
          * Het $data-array geeft informatie mee aan de view-pagina
          */
-
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
 
         $data = [
             'title' => 'Homepagina',

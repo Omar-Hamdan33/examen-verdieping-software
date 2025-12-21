@@ -2,6 +2,16 @@
 
 class BaseController
 {
+    public function __construct()
+    {
+        // if (session_status() === PHP_SESSION_NONE) {
+        //     session_start();
+        // }
+        
+        // Hier kan je eventueel een database connectie maken
+        // of andere initialisatie doen die voor alle controllers geldt
+    }
+    
     /**
      * Hier maken we een nieuw model object aan en geven deze 
      * terug aan de controller

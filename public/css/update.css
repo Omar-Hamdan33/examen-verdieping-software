@@ -1,0 +1,194 @@
+.signup-container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 3rem auto 2rem auto;
+  max-width: 600px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.signup-container h1 {
+  color: #137333;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 1.25rem;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #444444;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group select {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccd0d5;
+  border-radius: 6px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: #f8f9fa;
+}
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #137333;
+  box-shadow: 0 0 0 3px rgba(19, 115, 51, 0.12);
+  background: #fff;
+}
+.signup-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #137333;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 1rem;
+}
+.signup-button:hover {
+  background-color: #0e5e27;
+}
+.alert-error {
+  background-color: #ffe5e5;
+  color: #d93025;
+  border: 1px solid #f5c2c2;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+.alert-success {
+  background-color: #e6f4ea;
+  color: #137333;
+  border: 1px solid #c3e6cb;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+/* Responsive styling for update account form */
+.select-responsive {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.select-wrapper {
+  width: 100%;
+}
+.form-actions-responsive {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+.form-actions-responsive .signup-button {
+  flex: 1 1 180px;
+  min-width: 120px;
+}
+@media (max-width: 700px) {
+  .signup-container {
+    padding: 1rem 0.5rem;
+    max-width: 98vw;
+  }
+}
+@media (max-width: 600px) {
+  .signup-container {
+    padding: 1.2rem 0.5rem;
+    max-width: 99vw;
+  }
+  #updateForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .form-group, .select-responsive {
+    width: 100%;
+  }
+  .select-wrapper select {
+    width: 100%;
+    font-size: 1.05rem;
+  }
+  .form-actions-responsive {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .form-actions-responsive .signup-button {
+    width: 100%;
+    min-width: unset;
+  }
+  #addForm .row.g-3 {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  #addForm .col-12,
+  #addForm .col-md-2,
+  #addForm .col-md-4 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .form-actions-responsive .btn {
+    width: 100%;
+    min-width: unset;
+  }
+}
+/* Responsive styling for account overview table */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+.responsive-table td[data-label] {
+  position: relative;
+}
+@media (max-width: 900px) {
+  .table-responsive {
+    margin-bottom: 1.2rem;
+  }
+  .responsive-table thead {
+    display: none;
+  }
+  .responsive-table, .responsive-table tbody, .responsive-table tr, .responsive-table td {
+    display: block;
+    width: 100%;
+  }
+  .responsive-table tr {
+    margin-bottom: 1.2rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 0.7rem 0.5rem;
+  }
+  .responsive-table td {
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+    padding-left: 50%;
+    min-height: 2.2rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  .responsive-table td:before {
+    position: absolute;
+    left: 0.7rem;
+    top: 0.5rem;
+    width: 48%;
+    white-space: nowrap;
+    font-weight: 600;
+    color: #555;
+    content: attr(data-label);
+  }
+  .responsive-table td.text-center {
+    text-align: left !important;
+  }
+}
